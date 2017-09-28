@@ -1,2 +1,0 @@
-# jquery-calculator
-jQuery Calculator
