@@ -1,50 +1,56 @@
 <!doctype html>
 <html>
-<head>
-	<meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>jQuery Cylinder Volume Calculator</title>
-	<link rel="stylesheet" type="text/css" href="normalize.css">
-	<link rel="stylesheet" type="text/css" href="main.css">
-</head>
+	<head>
+		<meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>jQuery Cylinder Volume Calculator</title>
+		<link rel="stylesheet" type="text/css" href="normalize.css">
+		<link rel="stylesheet" type="text/css" href="main.css">
+	</head>
 
-<body>
-	<p>jQuery Volume Calculator</p>
-	<!-- <img src="cylinder_a.png" id="cylinderImg"> -->
-	<!-- Invisible Box -->
-	<div class="box">
-		<div class="cylinder-body">
-		<div class="cylinder-body-copy"></div>
-		<div class="cylinder-top">
-			<div class="dashed-line-top"></div>
-			<div class="line-top"></div>
-			<div class="radius-dot"></div>
-		</div>
-		<div class="cylinder-bottom"></div>
-		<div class="radius-measure">
-			<div class="radius-left"></div>
-			<div class="radius-right"></div>
-			<form>
-				<input id="txtRadius" class="radius-input" type="text" name="Radius" placeholder="Radius"></input>
-			</form>
-		</div>
-		<div class="height-measure">
-			<div class="height-top"></div>
-			<div class="height-bottom"></div>
-			<form>
-				<input id="txtHeight" class="height-input" type="text" name="Height" placeholder="Height"></input>
-			</form>
+	<body>
+		<div class="wrapper">
+			<h1>jQuery Volume Calculator</h1>
+			<div class="cylinder">
+				<div class="box">
+					<div class="cylinder-body">
+					<div class="cylinder-body-copy"></div>
+					<div class="cylinder-top">
+						<div class="dashed-line-top"></div>
+						<div class="line-top"></div>
+						<div class="radius-dot"></div>
+					</div>
+					<div class="cylinder-bottom"></div>
+					<div class="radius-measure">
+						<div class="radius-left"></div>
+						<div class="radius-right"></div>
+						<form>
+							<input id="txtRadius" class="radius-input" type="text" name="Radius" placeholder="Radius"></input>
+						</form>
+					</div>
+					<div class="height-measure">
+						<div class="height-top"></div>
+						<div class="height-bottom"></div>
+						<form>
+							<input id="txtHeight" class="height-input" type="text" name="Height" placeholder="Height"></input>
+						</form>
+						</div>
+					</div>
+				</div>
 			</div>
+			<!-- <form class="button-form">
+				Radius of cylinder (inches): <input type="text" id="txtRadius"/>
+				Height of cylinder (inches): <input type="text" id="txtHeight"/>
+				<input type="button" id="btnCalcVol" value="Calculate Volume"/>
+				<input type="reset" id="btnReset" value="Reset"/><br/>
+			</form> -->
+			<div class="button-container">
+				<button id="btnCalcVol">Calculate Volume</button>
+				<button id="btnReset">Reset</button>
+			</div>
+			<div id="output"></div>
 		</div>
-	</div>
-	<form>
-		<!-- Radius of cylinder (inches): <input type="text" id="txtRadius"/>
-		Height of cylinder (inches): <input type="text" id="txtHeight"/> -->
-		<input type="button" id="btnCalcVol" value="Calculate Volume"/>
-		<input type="reset" id="btnReset" value="Reset"/><br/>
-	</form>
-	<div id="output"></div>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<script src="scripts.js"></script>
-</body>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="scripts.js"></script>
+	</body>
 </html>

@@ -4,7 +4,7 @@ function cylinderVol(){
 	height=$("#txtHeight").val();
 	if (radius<0 || isNaN(radius) || radius==="" || height<0 || isNaN(height) || height===""){
 		$("#output").removeClass("highlightedGood");
-		$("#output").html("One or more of the values you submitted is invalid. Please try again").addClass("highlightedBad");
+		$("#output").html("One or more of the values you submitted is invalid. Please try again.").addClass("highlightedBad");
 	}
 
 	else{
@@ -21,15 +21,15 @@ $(document).ready(function(e) {
 		cylinderVol();
 	});
 
-	$("#txtRadius,#txtHeight").focus(function(){
-		$(this).addClass("focus");
+	// $("#txtRadius,#txtHeight").focus(function(){
+	// 	$(this).addClass("focus");
 
-	});
+	// });
 
-	$("#txtRadius,#txtHeight").blur(function(){
-		$(this).removeClass("focus");
+	// $("#txtRadius,#txtHeight").blur(function(){
+	// 	$(this).removeClass("focus");
 
-	});
+	// });
 
 	$("#btnReset").click(function(){
 		$("#output").empty();

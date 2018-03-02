@@ -1,91 +1,120 @@
 /*--------------------------
 Google Fonts
 --------------------------*/
-@import url('https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,500,600');
 
 
 
 /*--------------------------
 My Styles
 --------------------------*/
-.highlightedBad{
+html, body {
+	height: 100vh;
+	min-height: 100vh;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+body {
+	background-color: #dff9fb;
+	color: #30336b;
+	font-family: 'Raleway', sans-serif;
+}
+
+h1 {
+	font-weight: 600;
+	font-size: 2em;
+	margin: 15px 0;
+	text-align: center;
+}
+
+.wrapper {
+	margin: 0 auto;
+	width: 90%;
+}
+
+.button-container {
+	display: block;
+	margin: 0 auto;
+}
+
+#output {
+	display: block;
+	font-size: 1.5em;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.highlightedBad {
 	color: #c0392b;
 }
 
-.highlightedGood{
+.highlightedGood {
 	color: #27ae60;
 }
 
-.focus{
+.focus {
 	border-color: #9b59b6;
 	border-width: 3px;
 }
 
-body{
-	background-color: #ecf0f1;
-	color: #2c3e50;
-	font-family: 'Yanone Kaffeesatz', sans-serif;
-	font-size: 1.5em;
-	padding: 10px;
-}
-
-form{
+/*.button-form {
 	margin:0 auto;
 	width: 350px;
 	padding: 15px 0;
-	font-size: 1.25em;
+	font-size: 1.5em;
 }
-
+*/
 /*#txtRadius, #txtHeight {
 	font-family: 'Yanone Kaffeesatz', sans-serif;
 	font-size: .8em;
 }
-*/
-input[type=button]{
+
+input[type=button] {
 	background-color: #9b59b6;
 	border: none;
 	border-radius: 5px;
 	color: #ecf0f1;
-	font-family: 'Yanone Kaffeesatz', sans-serif;
+	font-family: 'Raleway', sans-serif;
 	font-size: 1em;
 	margin: 5px 25px;
 	padding: 5px 5px 3px 5px;
 }
 
-input[type=reset]{
+input[type=reset] {
 	background-color: #9b59b6;
 	border: none;
 	border-radius: 5px;
 	color: #ecf0f1;
-	font-family: 'Yanone Kaffeesatz', sans-serif;
+	font-family: 'Raleway', sans-serif;
 	font-size: 1em;
 	margin: 5px -10px;
 	padding: 5px 5px 3px 5px;
 }
 
-input[type=button]:hover, input[type=reset]:hover{
+input[type=button]:hover, input[type=reset]:hover {
 	background-color: #8e44ad;
 	transition:0.2s;
-}
-
-#output{
-	display: block;
-	font-size: 1.5em;
-	margin: 0 auto;
-	text-align: center;
-	width: 90%;
-}
+}*/
 
 
 
 /*--------------------------
 CSS Cylinder
 --------------------------*/
+.cylinder {
+	display: block;
+	margin: 0 auto;
+	width: 100%;
+}
+
 .box {
   position: relative;
   margin: auto;
   display: block;
   margin-top: 4.5%;
+  margin: 0 auto;
   height: 700px;
   width: 600px;
   background: none;
