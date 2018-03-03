@@ -13,29 +13,50 @@ My Styles
 }
 
 html, body {
-	/*height: 100%;
-	min-height: 100%;*/
-	margin: 0;
-	padding: 0;
+	height: 100%;
+	min-height: 100%;
 	width: 100%;
 }
 
 body {
 	background-color: #dff9fb;
-	color: #30336b;
+	color: #3d3d3d;
 	font-family: 'Raleway', sans-serif;
 }
 
 h1 {
 	font-weight: 600;
-	font-size: 2em;
-	margin: 15px 0;
+	font-size: 1.7em;
+	margin-top: 10px;
 	text-align: center;
 }
 
+header p {
+  font-size: 0.93em;
+  margin-top: 10px;
+  text-align: center;
+}
+
+footer {
+  bottom: 0;
+  font-weight: 400;
+  margin-top: 10px;
+  text-align: center;
+  width: 100%;
+}
+
 .wrapper {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 	margin: 0 auto;
-	width: 600px;
+  min-height: 100vh;
+	width: 90%;
+}
+
+.wrapper section {
+  flex: 1;
 }
 
 .button-container {
@@ -50,19 +71,53 @@ button {
 	margin: 0 10px;
 }
 
+#btnCalcVol {
+  background-color: #8854d0;
+  border: none;
+  border-radius: 5px;
+  color: #dff9fb;
+  font-size: 1em;
+  padding: 10px;
+  text-align: center;
+}
+
+#btnCalcVol:hover {
+  background-color: #a55eea;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+#btnReset {
+  background: #dff9fb;
+  border: 5px solid #8854d0;
+  border-radius: 5px;
+  color: #8854d0;
+  font-size: 1em;
+  padding: 5px;
+  text-align: center;
+}
+
+#btnReset:hover {
+  border: 5px solid #fc5c65;
+  color: #fc5c65;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
 #output {
-	display: block;
-	font-size: 1.5em;
-	margin: 0 auto;
+	font-size: 1.1em;
+  margin-top: 10px;
 	text-align: center;
 }
 
 .highlightedBad {
-	color: #c0392b;
+	color: #fc5c65;
+  font-weight: 500;
 }
 
 .highlightedGood {
-	color: #27ae60;
+	color: #3d3d3d;
+  font-weight: 500;
 }
 
 .focus {
@@ -70,19 +125,7 @@ button {
 	border-width: 3px;
 }
 
-/*.button-form {
-	margin:0 auto;
-	width: 350px;
-	padding: 15px 0;
-	font-size: 1.5em;
-}
-*/
-/*#txtRadius, #txtHeight {
-	font-family: 'Yanone Kaffeesatz', sans-serif;
-	font-size: .8em;
-}
-
-input[type=button] {
+/*input[type=button] {
 	background-color: #9b59b6;
 	border: none;
 	border-radius: 5px;
@@ -117,9 +160,8 @@ CSS Cylinder
 .box {
   position: relative;
   margin: auto;
-  margin-top: 4.5%;
-  height: 700px;
-  width: 600px;
+  height: 450px;
+  width: 350px;
   background: none;
 }
 
@@ -129,24 +171,24 @@ CSS Cylinder
   left: 15%;
   height: 70%;
   width: 70%;
-  background: #27ae60;
+  background: #26de81;
 }
 
 .cylinder-body-copy {
   position: absolute;
   height: 100%;
   width: 100%;
-  background: #27ae60;
+  background: #26de81;
   border: 2px solid #3d3d3d;
 }
 
 .cylinder-top {
   position: absolute;
-  margin-top: -18%;
+  top: -15%;
   height: 30%;
   width: 100%;
   border-radius: 50%;
-  background: #27ae60;
+  background: #26de81;
   border: 2px solid #3d3d3d;
 }
 
@@ -162,16 +204,16 @@ CSS Cylinder
 
 .line-top {
   position: absolute;
-  top: 51%;
+  top: 53%;
   left: 1.35%;
   height: 7%;
   width: 98%;
-  background: #27ae60;
+  background: #26de81;
 }
 
 .radius-dot {
   position: absolute;
-  top: 45%;
+  top: 43%;
   left: 48.5%;
   height: 15px;
   width: 15px;
@@ -181,11 +223,11 @@ CSS Cylinder
 
 .cylinder-bottom {
   position: absolute;
-  margin-top: 99%;
+  top: 85%;
   height: 30%;
   width: 100%;
   border-radius: 50%;
-  background: #27ae60;
+  background: #26de81;
   border: 2px solid #3d3d3d;
 }
 
@@ -203,25 +245,25 @@ CSS Cylinder
   position: absolute;
   top: 50%; 
   height: 100%;
-  width: 30%;
+  width: 25%;
   border-top: 3px solid #3d3d3d;
 }
 
 .radius-right {
   position: absolute;
-  left: 70%;
+  left: 75%;
   top: 50%; 
   height: 100%;
-  width: 30%;
+  width: 25%;
   border-top: 3px solid #3d3d3d;
 }
 
 .radius-input {
   position: absolute;
-  top: 20%;
-  left: 35%;
-  height: 60%;
-  width: 30%;
+  top: 5%;
+  left: 30%;
+  height: 90%;
+  width: 40%;
 }
 
 .height-measure {
@@ -253,8 +295,40 @@ CSS Cylinder
 
 .height-input {
   position: absolute;
-  top: 47.5%;
+  top: 46%;
   left: -35%;
-  height: 5%;
-  width: 170%;
+  height: 8%;
+  width: 260%;
 }
+
+
+
+/*--------------------------
+Media Queries
+--------------------------*/
+@media screen and (min-width: 520px) {
+  .box {
+    height: 600px;
+    width: 500px;
+  }
+
+  .dashed-line-top {
+    top: 47%;
+  }
+
+  .line-top {
+    top: 49%;
+  }
+
+  .radius-dot {
+    top: 42%;
+  }
+
+}
+
+
+
+
+
+
+

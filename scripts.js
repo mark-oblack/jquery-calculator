@@ -11,8 +11,9 @@ function cylinderVol(){
 		radius=parseFloat(radius);
 		height=parseFloat(height);
 		volume=Math.PI*Math.pow(radius,2)*height;
+		volume = volume.toFixed(4);
 		$("#output").removeClass("highlightedBad");
-		$("#output").html("The volume of the cylinder is " + volume).addClass("highlightedGood");
+		$("#output").html("The volume of the cylinder is " + volume + " inches.").addClass("highlightedGood");
 	}
 }
 
