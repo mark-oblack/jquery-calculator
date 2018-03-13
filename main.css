@@ -40,7 +40,7 @@ header p {
 footer {
   bottom: 0;
   font-weight: 400;
-  margin-top: 10px;
+  /*margin-top: auto;*/
   text-align: center;
   width: 100%;
 }
@@ -49,14 +49,14 @@ footer {
   align-items: center;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
 	margin: 0 auto;
   min-height: 100vh;
 	width: 90%;
 }
 
 .wrapper section {
-  flex: 1;
+  align-self: center;
 }
 
 .button-container {
@@ -74,7 +74,7 @@ button {
 #btnCalcVol {
   background-color: #8854d0;
   border: none;
-  border-radius: 5px;
+  border-radius: 20px;
   color: #dff9fb;
   font-size: 1em;
   padding: 10px;
@@ -90,11 +90,12 @@ button {
 #btnReset {
   background: #dff9fb;
   border: 5px solid #8854d0;
-  border-radius: 5px;
+  border-radius: 20px;
   color: #8854d0;
   font-size: 1em;
-  padding: 5px;
-  text-align: center;
+  padding: 5px 15px;
+/*  padding: 5px;
+  text-align: center;*/
 }
 
 #btnReset:hover {
@@ -106,7 +107,7 @@ button {
 
 #output {
 	font-size: 1.1em;
-  margin-top: 10px;
+  margin: 10px 0;
 	text-align: center;
 }
 
@@ -125,32 +126,6 @@ button {
 	border-width: 3px;
 }
 
-/*input[type=button] {
-	background-color: #9b59b6;
-	border: none;
-	border-radius: 5px;
-	color: #ecf0f1;
-	font-family: 'Raleway', sans-serif;
-	font-size: 1em;
-	margin: 5px 25px;
-	padding: 5px 5px 3px 5px;
-}
-
-input[type=reset] {
-	background-color: #9b59b6;
-	border: none;
-	border-radius: 5px;
-	color: #ecf0f1;
-	font-family: 'Raleway', sans-serif;
-	font-size: 1em;
-	margin: 5px -10px;
-	padding: 5px 5px 3px 5px;
-}
-
-input[type=button]:hover, input[type=reset]:hover {
-	background-color: #8e44ad;
-	transition:0.2s;
-}*/
 
 
 
@@ -308,8 +283,8 @@ Media Queries
 --------------------------*/
 @media screen and (min-width: 520px) {
   .box {
-    height: 600px;
-    width: 500px;
+    height: 550px;
+    width: 450px;
   }
 
   .dashed-line-top {
